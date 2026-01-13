@@ -345,39 +345,39 @@
 // 	vacancyId: 'v_901',
 // 	candidate: {
 // 		id: 'cand_55',
-// 		fullName: 'Dilshod Karimov',
-// 		phone: '+998933334455',
+// 		fullName: 'sardor Karimov',
+// 		phone: '+998933335555',
 // 		city: 'Buxoro',
 // 		portfolio: {
-// 			github: 'https://github.com/dilshod',
+// 			github: 'https://github',
 // 			website: null,
 // 		},
 // 		skills: [
 // 			{ name: 'React', level: 4 },
 // 			{ name: 'TypeScript', level: 3 },
-// 			{ name: 'CSS', level: 5 },
+// 			{ name: 'HTML', level: 5 },
 // 		],
 // 		desiredSalary: {
 // 			type: 'negotiable',
 // 		},
 // 	},
-// 	createdAt: '2026-01-09T15:40:00Z',
+// 	createdAt: '2026-01-09T',
 // 	status: 'interview',
 // 	history: [
 // 		{
-// 			at: '2026-01-09T15:40:00Z',
+// 			at: '2026-01-09T',
 // 			to: 'sent',
 // 			by: 'system',
 // 		},
 // 		{
-// 			at: '2026-01-09T16:10:00Z',
+// 			at: '2026-01-09',
 // 			to: 'review',
-// 			by: 'u_admin_1',
+// 			by: 'admin_1',
 // 		},
 // 		{
-// 			at: '2026-01-10T08:00:00Z',
+// 			at: '2026-01-10T',
 // 			to: 'interview',
-// 			by: 'u_hr_2',
+// 			by: 'hr_2',
 // 			note: 'Zoom link yuborildi',
 // 		},
 // 	],
@@ -410,16 +410,16 @@
 // 	currency?: 'USD' | 'UZS';
 // };
 
-// type EmploymentType = 'full_time' | 'part_time' | 'contract' | 'internship';
+// type EmploymentType = 'full_time' | 'contract' | 'internship';
 
-// type ExperienceLevel = 'junior' | 'mid' | 'senior';
+// type ExperienceLevel = 'junior' | 'midil' | 'senior';
 
 // type VacancyStatus = 'active' | 'paused' | 'closed';
 
 // type VacancyMeta = {
 // 	views: number;
 // 	applyClicks: number;
-// 	source: 'telegram' | 'website' | 'linkedin';
+// 	source: 'telegram' | 'website' | 'link';
 // };
 
 // type Vacancy = {
@@ -436,39 +436,39 @@
 // 	status: VacancyStatus;
 // 	meta: VacancyMeta;
 // };
-// ======
+
 // const vacancyObj: Vacancy = {
 // 	id: 'v_901',
 // 	company: {
 // 		id: 'c_77',
-// 		name: 'ISH LLC',
+// 		name: 'ISH LLooC',
 // 		verified: true,
 // 		contacts: {
-// 			phone: '+998990001122',
-// 			telegram: '@ish_support',
+// 			phone: '+998990122',
+// 			telegram: '@job_support',
 // 		},
 // 		location: {
 // 			city: 'Buxoro',
-// 			addressLine: 'Kitoblar olami, 2-qavat',
+// 			addressLine: ' 2-qavat',
 // 		},
 // 	},
-// 	title: 'Front-end Developer (React)',
-// 	description: 'Admin panel va job marketplace ustida ishlash.',
+// 	title: 'Front-end Developer ',
+// 	description: 'Admin panel.',
 // 	employment: 'full_time',
 // 	experience: 'mid',
 // 	salary: {
 // 		type: 'fixed',
-// 		from: 800,
-// 		to: 1300,
+// 		from: 600,
+// 		to: 100,
 // 		currency: 'USD',
 // 	},
 // 	skills: ['React', 'TypeScript', 'REST', 'Git'],
-// 	tags: ['remote_possible', 'urgent'],
-// 	createdAt: '2026-01-08T10:00:00Z',
+// 	tags: ['possible', 'urgent'],
+// 	createdAt: '2026-01',
 // 	status: 'active',
 // 	meta: {
 // 		views: 183,
-// 		applyClicks: 29,
+// 		applyClicks: 2,
 // 		source: 'telegram',
 // 	},
 // };
