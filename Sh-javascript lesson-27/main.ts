@@ -58,7 +58,7 @@ class Library {
 		let bookStatus: boolean = false;
 		if (tanlov === 1) {
 			bookStatus = true;
-		} else if (tanlov === 3) {
+		} else if (tanlov === 2) {
 			bookStatus = false;
 		} else {
 			alert("noto'g'ri qiymat");
@@ -91,6 +91,31 @@ class Library {
 		}
 		return s;
 	}
+	etiBook(): void {
+		const selectedBookNum = +(prompt(
+			`Iltimos tahrirlashni istagan kitob raqamini tanlang:\n${this.seeAllBooks()}`,
+		) as string);
+
+		const book = this.books[selectedBookNum - 1];
+		if (!book) {
+			alert('Bunday kitob topilmadi');
+			return;
+		}
+
+		const newName = prompt(`Kitob nomi (${book.name})`) || book.name;
+		const newAuthor = prompt(`Muallif (${book.author})`) || book.author;
+		const newPrice = +(prompt(`Narx (${book.price})`) || book.price);
+		const newQuantity = +(prompt(`Soni (${book.quantity})`) || book.quantity);
+		const newStatus = +prompt(`Holati:\n1-Yangi\n2-Eski (${book.isNew ? 'Yangi' : 'Eski'})`);
+
+		book.name = newName;
+		book.author = newAuthor;
+		book.price = newPrice;
+		book.quantity = newQuantity;
+		book.isNew = newStatus === 1 ? true : false;
+
+		alert('Kitob muvaffaqiyatli tahrirlandi');
+	}
 }
 
 const library = new Library('Falaq Nashr');
@@ -111,6 +136,7 @@ while (isRunning) {
 			break;
 		case 3:
 			// edit logic
+			library.etiBook();
 			break;
 		case 4:
 			// search books logic

@@ -15,6 +15,7 @@ declare class Library {
     seeAllBooks(): string;
     deleteBook(): void;
     searchBookByName(): string;
+    etiBook(): void;
 }
 declare const library: Library;
 declare let isRunning: boolean;
