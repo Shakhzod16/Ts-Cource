@@ -154,7 +154,6 @@ class StudeyCentr {
         while (isRunning) {
             const command = +prompt('1-add student to group\n2-edit name\n3-assign teacher\n4-remove student\n5-see students\n0-back\nChoose command:');
             switch (command) {
-                // ADD STUDENT TO GROUP
                 case 1: {
                     if (this.students.length === 0) {
                         alert('No students');
@@ -170,7 +169,6 @@ class StudeyCentr {
                     alert('Student added to group');
                     break;
                 }
-                // EDIT GROUP NAME
                 case 2: {
                     const newName = prompt(`Enter new group name (current: ${currentGroup.name}):`);
                     if (!newName || !newName.trim()) {
@@ -181,7 +179,6 @@ class StudeyCentr {
                     alert('Group name updated');
                     break;
                 }
-                // ASSIGN TEACHER
                 case 3: {
                     if (this.teachers.length === 0) {
                         alert('No teachers');
@@ -197,7 +194,6 @@ class StudeyCentr {
                     alert('Teacher assigned');
                     break;
                 }
-                // REMOVE STUDENT FROM GROUP
                 case 4: {
                     if (currentGroup.students.length === 0) {
                         alert('Group is empty');
@@ -217,7 +213,6 @@ class StudeyCentr {
                     alert('Student removed');
                     break;
                 }
-                // SEE STUDENTS
                 case 5: {
                     if (currentGroup.students.length === 0) {
                         alert('No students in group');

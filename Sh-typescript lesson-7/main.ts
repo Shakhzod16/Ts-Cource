@@ -204,7 +204,6 @@ class StudeyCentr {
 			) as string);
 
 			switch (command) {
-				// ADD STUDENT TO GROUP
 				case 1: {
 					if (this.students.length === 0) {
 						alert('No students');
@@ -225,7 +224,6 @@ class StudeyCentr {
 					break;
 				}
 
-				// EDIT GROUP NAME
 				case 2: {
 					const newName = prompt(`Enter new group name (current: ${currentGroup.name}):`) as string;
 
@@ -239,7 +237,6 @@ class StudeyCentr {
 					break;
 				}
 
-				// ASSIGN TEACHER
 				case 3: {
 					if (this.teachers.length === 0) {
 						alert('No teachers');
@@ -260,7 +257,6 @@ class StudeyCentr {
 					break;
 				}
 
-				// REMOVE STUDENT FROM GROUP
 				case 4: {
 					if (currentGroup.students.length === 0) {
 						alert('Group is empty');
@@ -286,7 +282,6 @@ class StudeyCentr {
 					break;
 				}
 
-				// SEE STUDENTS
 				case 5: {
 					if (currentGroup.students.length === 0) {
 						alert('No students in group');
