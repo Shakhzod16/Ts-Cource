@@ -39,31 +39,72 @@
 
 // ============ { Interface vs Type }  ============
 
-type User = {
-	id: number;
-	name: string;
-	email: string;
-	password: string;
-};
+// type User = {
+// 	id: number;
+// 	name: string;
+// 	email: string;
+// 	password: string;
+// };
 
-// type User = {} mumkin emas
+// // type User = {} mumkin emas
 
-type Admin = User & {
-	role: 'SUPERADMIN' | 'ADMIN';
-};
+// type Admin = User & {
+// 	role: 'SUPERADMIN' | 'ADMIN';
+// };
 
-const admin: Admin = {};
+// const admin: Admin = {};
 
-interface IUser {
-	id: number;
-	name: string;
-	email: string;
-	password: string;
-}
+// interface IUser {
+// 	id: number;
+// 	name: string;
+// 	email: string;
+// 	password: string;
+// }
 
-interface IAdmin extends IUser {
-	role: 'SUPERADMIN' | 'ADMIN';
-}
-interface IUser {
-	test: boolean;
-}
+// interface IAdmin extends IUser {
+// 	role: 'SUPERADMIN' | 'ADMIN';
+// }
+// interface IUser {
+// 	test: boolean;
+// }
+
+// ============ { abstract vs ipmplement }  ============
+
+// abstract class Animal {
+// 	name: string = 'Hello';
+
+// 	abstract makeSound(): void;
+// }
+
+// class Dog extends Animal {
+// 	makeSound(): void {
+// 		console.log('Dog is running');
+// 	}
+// }
+
+// const dog = new Dog();
+// dog.makeSound();
+
+// ============ { Amaliy Task }  ============
+
+// interface IUserProfile {
+// 	id: number;
+// 	name: string;
+// 	email: string;
+// 	isActive: boolean;
+// }
+
+// interface IAuthor {
+// 	name: string;
+// 	email: string;
+// }
+// type tag = string;
+// interface IBlogPost {
+// 	id: number;
+// 	title: string;
+// 	content: string;
+// 	tags: tag[];
+// 	author: IAuthor;
+// }
+
+// ============ { Homework }  ============
